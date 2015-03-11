@@ -1,6 +1,7 @@
 #!/bin/bash
 npm install
 sudo service postgresql start
+sudo apt-get update
 sudo apt-get install postgresql-contrib-9.3 uuid
 echo "REVOKE ALL PRIVILEGES ON ALL TABLES IN SCHEMA public FROM elasng" | sudo sudo -u postgres psql
 echo "REVOKE ALL PRIVILEGES ON DATABASE postgres FROM elasng" | sudo sudo -u postgres psql
