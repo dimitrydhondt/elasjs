@@ -5,7 +5,7 @@ var Q = require("q");
 var pg = require('pg');
 
 // Local includes
-var roa = require("./roa4node.js");
+var roa = require("sri4node");
 var $u = roa.utils;
 var $m = roa.mapUtils;
 var $s = roa.schemaUtils;
@@ -80,6 +80,8 @@ roa.configure(app,pg,
     {
         // For debugging SQL can be logged.
         logsql : false,
+        // Default database URL, for local development only.
+        defaultdatabaseurl : "postgres://elasng:elasng@localhost:5432/postgres",
         resources : [
             {
                 // Base url, maps 1:1 with a table in postgres (same name, except the '/' is removed)
