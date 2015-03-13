@@ -1,7 +1,7 @@
 {
-  "name": "elasjs",
+  "name": "elasng",
   "version": "0.1.0",
-  "description": "MEAN implementation of the public website of EVA Dendermonde.",
+  "description": "MEAN implementation of a proof-of-concept for new LETS software.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
